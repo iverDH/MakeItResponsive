@@ -4,4 +4,27 @@ body {
 	display: flex;
 	flex-direction:column;
 	display: inline;
+	font-family: "Arial";
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	background-color: lightblue;
+	padding: 0 10px 0 10px; /* padding på sidene så teksten ikke er helt til kanten */
+}
+
+.navlinks {
+	display: flex;
+	margin-left: auto;
+	justify-content: center;
+}
+
+.navlinks a {
+	margin: auto 5px auto 5px;
+}
+
+.content {
+	display: flex;
+	overflow-y: scroll;
 }
