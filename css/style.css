@@ -51,31 +51,32 @@ body {
 }
 
 .content2{
-	height: 50vh;
+	background-color: #B3C7D6FF;
+	padding: 20px;
 }
 
 .content3{
-	background-color: #B3C7D6FF;
-	padding: 20px;
+	height: 50vh;
 }
 
 /*----------------------------------------------Event tabell--------------------------------------------------*/
 .event-schedule{
     display: flex;
     flex-direction: column;
-    text-align: center;
 	margin: auto;
+	padding: 10px;
     background-color: #D9B48FFF;
     min-width: 800px;
-
     font-size: 1.5em;
 }
 
 table{
-	border-collapse: collapse;
+	border-color: black;
+	text-align: left;
 }
+
 th{
-    padding: 0px 30px 10px 30px;
+	padding: 0px 30px 10px 30px;
 }
 table a{
     cursor: pointer;
@@ -85,3 +86,5 @@ table a{
 table a:hover{
     text-decoration: underline;
 }
+
+
