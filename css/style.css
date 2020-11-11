@@ -7,6 +7,17 @@ body {
 	font-family: "Arial";
 }
 
+/*----------------------------------------------main divs--------------------------------------------------*/
+
+
+#main-content{
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+}
+
+
+/*----------------------------------------------navbar--------------------------------------------------*/
 .navbar {
 	display: flex;
 	flex-direction: row;
@@ -27,4 +38,50 @@ body {
 .content {
 	display: flex;
 	overflow-y: scroll;
+}
+
+/*----------------------------------------------content divs--------------------------------------------------*/
+.content1, .content2, .content3{
+	display: flex;
+	width: 100%;
+}
+
+.content1{
+	height: 50vh;
+}
+
+.content2{
+	height: 50vh;
+}
+
+.content3{
+	background-color: #B3C7D6FF;
+	padding: 20px;
+}
+
+/*----------------------------------------------Event tabell--------------------------------------------------*/
+.event-schedule{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+	margin: auto;
+    background-color: #D9B48FFF;
+    min-width: 800px;
+
+    font-size: 1.5em;
+}
+
+table{
+	border-collapse: collapse;
+}
+th{
+    padding: 0px 30px 10px 30px;
+}
+table a{
+    cursor: pointer;
+    text-decoration: none;
+    color: teal;
+}
+table a:hover{
+    text-decoration: underline;
 }
