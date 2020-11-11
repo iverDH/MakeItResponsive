@@ -9,35 +9,33 @@ body {
 
 /*----------------------------------------------main divs--------------------------------------------------*/
 
-
 #main-content{
 	display: flex;
 	flex-direction: column;
-	overflow-y: scroll;
+	padding-top: 79.88px; /* gjør at navbaren ikke kommer i veien for noe av innholdet */
 }
 
 
 /*----------------------------------------------navbar--------------------------------------------------*/
-.navbar {
+#navbar {
 	display: flex;
 	flex-direction: row;
+	position: fixed;
+	top: 0;
+	width: 100%;
 	background-color: lightblue;
-	padding: 0 10px 0 10px; /* padding på sidene så teksten ikke er helt til kanten */
+	padding-left: 10px; /* padding på sidene så teksten ikke er helt til kanten */
 }
 
-.navlinks {
+#navlinks {
 	display: flex;
+	margin-right: 25px;
 	margin-left: auto;
 	justify-content: center;
 }
 
-.navlinks a {
+#navlinks a {
 	margin: auto 5px auto 5px;
-}
-
-.content {
-	display: flex;
-	overflow-y: scroll;
 }
 
 /*----------------------------------------------content divs--------------------------------------------------*/
@@ -129,3 +127,30 @@ input[type="submit"]:hover{
 }
 
 
+/*----------------------------------------------Contact info--------------------------------------------------*/
+.container {
+	width: 900px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.container .box {
+	text-align: center;
+}
+.container .box .icon .fa {
+	font-size: 80px;
+	cursor: pointer;
+}
+.container .box .icon h3,
+.container .box .icon h4 {
+	position: relative;
+	overflow: hidden;
+	font-weight: 400;
+	margin: 0;
+	padding: 2px 5px;
+	font-size: 24px;
+}
+.container .box .icon h4 {
+	font-weight: 600;
+	margin: 5px 0;
+}
