@@ -45,7 +45,8 @@ body {
 }
 
 .content1{
-	height: 50vh;
+	display: flex;
+	flex-direction: row;
 }
 
 .content2{
@@ -58,14 +59,24 @@ body {
 .content3{
 	height: 50vh;
 }
-/*----------------------------------------------Business info--------------------------------------------------*/
+/*----------------------------------------------Front page--------------------------------------------------*/
+
+.content1 img {
+	margin: auto 10vh auto auto;
+	height: 50vh;
+}
+
 .textbox {
 	width: 30vw;
-	margin: auto auto auto 10vw;
+	margin: 20vh auto 20vh 10vw;
+}
+
+.textbox h1 {
+	font-size: 2.5em;
 }
 
 .textbox p {
-	font-size: 1.25em;
+	font-size: 1.5em;
 }
 
 /*----------------------------------------------Innovation events--------------------------------------------------*/
