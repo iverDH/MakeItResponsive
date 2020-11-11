@@ -51,33 +51,52 @@ body {
 }
 
 .content2{
+	flex-direction: column;
 	background-color: #B3C7D6FF;
 	padding: 20px;
+	align-items: center;
 }
 
 .content3{
 	height: 50vh;
 }
 
-/*----------------------------------------------Event tabell--------------------------------------------------*/
+/*----------------------------------------------Innovation events--------------------------------------------------*/
+.about-event{
+	background-color: #D9B48FFF;
+	width: 80vw;
+	padding: 10px;
+}
+
 .event-schedule{
     display: flex;
     flex-direction: column;
 	margin: auto;
 	padding: 10px;
     background-color: #D9B48FFF;
-    min-width: 800px;
-    font-size: 1.5em;
+	font-size: 1.5em;
+	width: 80vmax;
 }
 
+.join-event{
+	background-color: #D9B48FFF;
+	width: 80vw;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
 table{
-	border-color: black;
+	border: 1px solid black;
 	text-align: left;
 }
 
-th{
-	padding: 0px 30px 10px 30px;
+th, td{
+	padding: 10px 30px 10px 30px;
 }
+
 table a{
     cursor: pointer;
     text-decoration: none;
@@ -85,6 +104,28 @@ table a{
 }
 table a:hover{
     text-decoration: underline;
+}
+
+form{
+	padding: 10px;
+	width: 132px;
+}
+
+input[type="text"]{
+	display: block;		/*gjør den om til blokk*/
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+
+input[type="submit"]{
+	border-radius: 5px;
+	text-align: center;
+	display: block;
+	background-color: #d9d4a6;
+	/*font-weight: bold;*/
+}
+input[type="submit"]:hover{
+	background-color: #f3eba5;
 }
 
 
