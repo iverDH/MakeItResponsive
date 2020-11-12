@@ -50,7 +50,7 @@ body {
 
 .content2{
 	flex-direction: column;
-	background-color: #B3C7D6FF;
+	background-color: teal;
 	align-items: center;
 }
 
@@ -81,10 +81,8 @@ body {
 .about-event{
 	display: flex;
 	flex-direction: row;
-	background-color: white;
 	width: 100%;
-	background-color: teal;
-	color: white
+	color: white;
 }
 
 .about-event1 p, .about-event2 p, .join-event p, .event-schedule p{
@@ -99,25 +97,33 @@ body {
 	width: 30vw;
 	margin: 10vh auto 10vh 10vw;
 }
-
+.about-event2{
+	padding: 5vh 10vw 0 0;
+}
 .about-event2 img{
-	margin: 5vh 10vh auto auto;
 	height: 50vh;
 }
 
 .event-schedule{
     display: flex;
     flex-direction: row;
-	margin: auto;
 	width: 100%;
-	background-color: teal;
+}
+@media (max-width: 950px){
+	.event-schedule{
+		flex-direction: column;
+	}
+}
+@media (max-width: 400px){
+	.about-event2 img{
+		height: 20vh;
+	}
 }
 
 .join-event{
-	width: 80vw;
+	color: white;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 }
 
 table{
@@ -137,16 +143,6 @@ td{
 th{
 	font-size: 2.5em;
 }
-
-table a{
-    cursor: pointer;
-    text-decoration: none;
-    color: teal;
-}
-table a:hover{
-    text-decoration: underline;
-}
-
 
 /*----------------------------------------------Form--------------------------------------------------*/
 form{
