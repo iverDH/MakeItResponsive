@@ -45,14 +45,12 @@ body {
 }
 
 .content1{
-	display: flex;
 	flex-direction: row;
 }
 
 .content2{
 	flex-direction: column;
 	background-color: #B3C7D6FF;
-	padding: 20px;
 	align-items: center;
 }
 
@@ -81,38 +79,63 @@ body {
 
 /*----------------------------------------------Innovation events--------------------------------------------------*/
 .about-event{
-	background-color: #D9B48FFF;
-	width: 80vw;
-	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	width: 100%;
+	background-color: teal;
+	color: white
+}
+
+.about-event1 p, .about-event2 p, .join-event p, .event-schedule p{
+	font-size: 1.5em
+}
+
+.about-event1 h1, .join-event h1{
+	font-size: 2.5em;
+}
+
+.about-event1{
+	width: 30vw;
+	margin: 10vh auto 10vh 10vw;
+}
+
+.about-event2 img{
+	margin: 5vh 10vh auto auto;
+	height: 50vh;
 }
 
 .event-schedule{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 	margin: auto;
-	padding: 10px;
-    background-color: #D9B48FFF;
-	font-size: 1.5em;
-	width: 80vmax;
+	width: 100%;
+	background-color: teal;
 }
 
 .join-event{
-	background-color: #D9B48FFF;
 	width: 80vw;
-	padding: 10px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-around;
 }
 
-
 table{
-	border: 1px solid black;
+	border: 1px solid white;
+	color: white;
+	border-radius: 5px;
 	text-align: left;
+	margin: 5vh auto 5vh 10vw;
 }
 
 th, td{
 	padding: 10px 30px 10px 30px;
+}
+td{
+	font-size: 1.5em;
+}
+th{
+	font-size: 2.5em;
 }
 
 table a{
@@ -124,26 +147,38 @@ table a:hover{
     text-decoration: underline;
 }
 
+
+/*----------------------------------------------Form--------------------------------------------------*/
 form{
-	padding: 10px;
 	width: 132px;
 }
 
-input[type="text"]{
-	display: block;		/*gjør den om til blokk*/
-	border-radius: 5px;
-	margin-bottom: 5px;
+select{
+	width: auto;
+	font-size: 1.5em;
+	color: white;
+	background-color: teal;
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 5px;
+}
+option{
+	font-size: 1.5em;
 }
 
 input[type="submit"]{
-	border-radius: 5px;
 	text-align: center;
 	display: block;
-	background-color: #d9d4a6;
-	/*font-weight: bold;*/
+	color: white;
+	background-color: rgba(128, 128, 128, 0.548);
+	padding: 7px;
+	margin-top: 15px;
+	font-size: 1.5em;
+	border: 1px solid white;
+	border-radius: 3px;
 }
 input[type="submit"]:hover{
-	background-color: #f3eba5;
+	background-color: rgba(92, 91, 91, 0.548);
 }
 
 
