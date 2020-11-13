@@ -13,6 +13,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding-top: 10vh; /* gjør at navbaren ikke kommer i veien for noe av innholdet */
+	margin: 0;
+	padding: 0;
 }
 
 /*----------------------------------------------navbar--------------------------------------------------*/
@@ -49,7 +51,7 @@ body {
 }
 
 /*----------------------------------------------content divs--------------------------------------------------*/
-.content1, .content2, .content3{
+.content1, .content2, .content3, .content4{
 	display: flex;
 	width: 100%;
 }
@@ -58,6 +60,7 @@ body {
 	flex-direction: row;
 	background-color: #b2d8d8;
 	height: 70vh;
+	padding-top: 10vh;
 }
 @media(max-height: 590px){
 	.content1{
@@ -68,11 +71,22 @@ body {
 .content2{
 	flex-direction: column;
 	background-color: teal;
-	align-items: center;
+	padding-top: 10vh;
 }
 
 .content3{
 	height: 50vh;
+}
+
+.content4{
+	flex-direction: column;
+	background-color: #b2d8d8;
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+}
+.content4 h1{
+	font-size: 3.5em;
+	text-align: center;
 }
 /*----------------------------------------------Front page--------------------------------------------------*/
 
@@ -95,11 +109,17 @@ body {
 }
 
 /*----------------------------------------------Innovation events--------------------------------------------------*/
+.white-font{
+	color: white;
+}
+span{
+	font-weight: bold;
+}
 .about-event{
 	display: flex;
 	flex-direction: row;
-	width: 100%;
-	color: white;
+	justify-content: space-around;
+	padding-bottom: 7vh;
 }
 
 .about-event1 p, .about-event2 p, .join-event p, .event-schedule p{
@@ -109,21 +129,32 @@ body {
 .about-event1 h1, .join-event h1{
 	font-size: 2.5em;
 }
+.about-event1 h2, .join-event h2{
+	font-size: 2em;
+}
 
 .about-event1{
 	width: 30vw;
-	margin: 10vh auto 10vh 10vw;
 }
 
-.about-event2 img{
-	margin: 5vh 10vw 0 0;
+.bilde1{
 	height: 50vh;
+}
+.bilde2{
+	height: 30vh;
+}
+.bilde3{
+	height: 50vh;
+	width: 50vh;
 }
 
 .event-schedule{
     display: flex;
-    flex-direction: row;
+	flex-direction: row;
+	justify-content: center;
 	width: 100%;
+	padding-bottom: 10vh;
+	padding-top: 5vh;
 }
 @media (max-width: 950px){
 	.event-schedule{
@@ -135,6 +166,7 @@ body {
 	color: white;
 	display: flex;
 	flex-direction: column;
+	margin-left: 10vw;
 }
 
 table{
@@ -142,7 +174,7 @@ table{
 	color: white;
 	border-radius: 5px;
 	text-align: left;
-	margin: 5vh auto 5vh 10vw;
+	width: 40vw;
 }
 
 th, td{
