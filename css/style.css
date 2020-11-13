@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 	display: inline;
 	font-family: "Arial";
 }
@@ -12,9 +12,8 @@ body {
 #main-content{
 	display: flex;
 	flex-direction: column;
-	padding-top: 79.88px; /* gjør at navbaren ikke kommer i veien for noe av innholdet */
+	padding-top: 10vh; /* gjør at navbaren ikke kommer i veien for noe av innholdet */
 }
-
 
 /*----------------------------------------------navbar--------------------------------------------------*/
 #navbar {
@@ -23,7 +22,9 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: lightblue;
+	height: 10vh;
+	min-height: 50px;
+	background-color: #c7f1f1;
 	padding-left: 10px; /* padding på sidene så teksten ikke er helt til kanten */
 }
 
@@ -35,7 +36,16 @@ body {
 }
 
 #navlinks a {
-	margin: auto 5px auto 5px;
+	margin: auto 20px auto 20px;
+}
+
+.inova{
+	display: flex;
+	justify-content: center;
+}
+.inova h1{
+	margin: auto 5px auto 15px;
+	font-size: 2.5em;
 }
 
 /*----------------------------------------------content divs--------------------------------------------------*/
@@ -46,6 +56,13 @@ body {
 
 .content1{
 	flex-direction: row;
+	background-color: #b2d8d8;
+	height: 70vh;
+}
+@media(max-height: 590px){
+	.content1{
+		height: auto;
+	}
 }
 
 .content2{
@@ -97,10 +114,9 @@ body {
 	width: 30vw;
 	margin: 10vh auto 10vh 10vw;
 }
-.about-event2{
-	padding: 5vh 10vw 0 0;
-}
+
 .about-event2 img{
+	margin: 5vh 10vw 0 0;
 	height: 50vh;
 }
 
@@ -112,11 +128,6 @@ body {
 @media (max-width: 950px){
 	.event-schedule{
 		flex-direction: column;
-	}
-}
-@media (max-width: 400px){
-	.about-event2 img{
-		height: 20vh;
 	}
 }
 
