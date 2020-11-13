@@ -5,6 +5,7 @@ body {
 	flex-direction: column;
 	display: inline;
 	font-family: "Arial";
+	line-height: 1.5;
 }
 
 /*----------------------------------------------main divs--------------------------------------------------*/
