@@ -39,6 +39,13 @@ body {
 
 #navlinks a {
 	margin: auto 20px auto 20px;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: black;
+}
+
+#navlinks a:hover{
+	text-decoration: underline;
 }
 
 .inova{
@@ -51,7 +58,7 @@ body {
 }
 
 /*----------------------------------------------content divs--------------------------------------------------*/
-.content1, .content2, .content3, .content4{
+.content1, #content2, .content3, #content4{
 	display: flex;
 	width: 100%;
 }
@@ -68,7 +75,7 @@ body {
 	}
 }
 
-.content2{
+#content2{
 	flex-direction: column;
 	background-color: teal;
 	padding-top: 10vh;
@@ -78,13 +85,12 @@ body {
 	height: 50vh;
 }
 
-.content4{
+#content4{
 	flex-direction: column;
 	background-color: #b2d8d8;
-	padding-top: 5vh;
-	padding-bottom: 10vh;
+	padding-top: 8vh;
 }
-.content4 h1{
+#content4 h1{
 	font-size: 3.5em;
 	text-align: center;
 }
