@@ -271,6 +271,7 @@ input[type="submit"]:hover{
 
 	.member-info img {
 		width: 40vw;
+		max-width: 300px;
 	}
 }
 
