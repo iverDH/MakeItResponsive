@@ -230,8 +230,18 @@ input[type="submit"]:hover{
 
 /*----------------------------------------------Contact info--------------------------------------------------*/
 
-.content3 {
-	background-color: teal;
+.contact {
+	background-color: lightskyblue;
+}
+.contact h1 {
+	font-size: 45px;
+	text-align: center;
+	margin: 0;
+}
+.contact p {
+	font-size: 25px;
+	text-align: center;
+	margin: 0;
 }
 .container {
 	width: 900px;
@@ -258,4 +268,10 @@ input[type="submit"]:hover{
 .container .box .icon h4 {
 	font-weight: 600;
 	margin: 5px 0;
+}
+.fa-envelope {
+	color: teal;
+}
+.fa-phone {
+	color: green;
 }
