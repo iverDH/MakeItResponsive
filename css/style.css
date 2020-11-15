@@ -58,6 +58,12 @@ body {
 	font-size: 2.5em;
 }
 
+@media only screen and (max-width: 866px) {
+	#navbar {
+		min-height: 78px; /* ellers går teksten ut av navbaren */
+	}
+}
+
 /*----------------------------------------------content divs--------------------------------------------------*/
 .content1, #content2, .content3, #content4{
 	display: flex;
@@ -91,10 +97,17 @@ body {
 	background-color: #b2d8d8;
 	padding-top: 8vh;
 }
-#content4 h1{
+
+#content4 h1, #content5 h1 {
 	font-size: 3.5em;
 	text-align: center;
 }
+
+#content5 {
+	flex-direction: column;
+	padding-top: 8vh;
+}
+
 /*----------------------------------------------Front page--------------------------------------------------*/
 
 .content1 img {
@@ -227,6 +240,37 @@ input[type="submit"]:hover{
 	background-color: rgba(92, 91, 91, 0.548);
 }
 
+/*----------------------------------------------Staff info--------------------------------------------------*/
+.staff-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.staff-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.member-info {
+	text-align: center;
+	margin: 0 2vw;
+}
+
+@media only screen and (max-width: 1000px) {
+	.staff-container{
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.staff-row {
+		flex-direction: column;
+	}
+
+	.member-info img {
+		width: 40vw;
+	}
+}
 
 /*----------------------------------------------Contact info--------------------------------------------------*/
 
