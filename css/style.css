@@ -129,6 +129,21 @@ body {
 	font-size: 1.5em;
 }
 
+@media only screen and (max-width: 1000px) {
+	.content1 {
+		flex-direction: column;
+	}
+
+	.content1 img {
+		width: 40vw;
+		margin: 8vh auto;
+	}
+
+	.textbox {
+		width: 90vw;
+		margin: auto;
+}
+
 /*----------------------------------------------Innovation events--------------------------------------------------*/
 .white-font{
 	color: white;
