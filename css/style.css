@@ -105,7 +105,9 @@ body {
 
 #content5 {
 	flex-direction: column;
-	padding-top: 8vh;
+	background-color: teal;
+	color: white;
+	padding: 8vh 0;
 }
 
 /*----------------------------------------------Front page--------------------------------------------------*/
