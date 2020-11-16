@@ -409,6 +409,14 @@ input[type="submit"]:hover{
 
 @media only screen and (max-width: 1150px) {
 	.contact {
-		font-size: 4vw;
+		font-size: 2.5vw;
+	}
+
+	.container {
+		font-size: 3vw;
+	}
+
+	.container .box {
+		margin: 0 4vw;
 	}
 }
