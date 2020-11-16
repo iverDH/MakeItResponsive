@@ -56,11 +56,18 @@ body {
 .inova h1{
 	margin: auto 5px auto 15px;
 	font-size: 2.5em;
+	height: auto;
 }
 
-@media only screen and (max-width: 866px) {
+@media only screen and (max-width: 1000px){
+	#navlinks a{
+		font-size: 4vw;
+	}
+	.inova h1{
+		font-size: 5em;
+	}
 	#navbar {
-		min-height: 78px; /* ellers går teksten ut av navbaren */
+		min-height: 110px; /* ellers går teksten ut av navbaren */
 	}
 }
 
@@ -159,14 +166,14 @@ span{
 	padding-bottom: 7vh;
 }
 
-.about-event1 p, .about-event2 p, .join-event p, .event-schedule p{
-	font-size: 1.5em
+.about-event1 p, .about-event2 p, .join-event p{
+	font-size: 1.5em;
 }
 
-.about-event1 h1, .join-event h1{
+.about-event1 h1, .about-event2 h2, .join-event h1{
 	font-size: 2.5em;
 }
-.about-event1 h2, .join-event h2{
+.about-event1 h2, .about-event2 h2, .join-event h2{
 	font-size: 2em;
 }
 
@@ -175,14 +182,13 @@ span{
 }
 
 .bilde1{
-	height: 50vh;
+	width: 30vw;
 }
 .bilde2{
-	height: 30vh;
+	width: 15vw;
 }
 .bilde3{
-	height: 50vh;
-	width: 50vh;
+	width: 25vw;
 }
 
 .event-schedule{
@@ -193,7 +199,8 @@ span{
 	padding-bottom: 10vh;
 	padding-top: 5vh;
 }
-@media (max-width: 950px){
+
+@media only screen and (max-width: 950px){
 	.event-schedule{
 		flex-direction: column;
 	}
@@ -224,9 +231,50 @@ th{
 	font-size: 2.5em;
 }
 
+@media only screen and (max-width: 1000px) {
+	.about-event{
+		flex-direction: column;
+		align-items: center;
+	}
+	.about-event1, .about-event2{
+		width: 90vw;
+	}
+	.event-schedule{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	table{
+		width: 90vw;
+	}
+
+	.event-schedule td{
+		font-size: 4em;
+	}
+	th{
+		font-size: 5em;
+	}
+
+	.join-event{
+		width: 90vw;
+		margin: auto;
+	}
+
+	.bilde1{
+		width: 0;
+	}
+	.bilde2{
+		width: 0;
+	}
+	.bilde3{
+		width: 0;
+	}
+
+}
+
 /*----------------------------------------------Form--------------------------------------------------*/
 form{
-	width: 132px;
+	width: auto;
 }
 
 select{
@@ -272,6 +320,7 @@ input[type="submit"]:hover{
 .member-info {
 	text-align: center;
 	margin: 0 2vw;
+	font-size: 1.5em;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -287,6 +336,12 @@ input[type="submit"]:hover{
 	.member-info img {
 		width: 40vw;
 		max-width: 300px;
+	}
+	.member-info h2{
+		font-size: 5.0em;
+	}
+	.member-info p{
+		font-size: 4em;
 	}
 }
 
