@@ -25,7 +25,6 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 10vh;
 	min-height: 50px;
 	background-color: #c7f1f1;
 	padding-left: 10px; /* padding på sidene så teksten ikke er helt til kanten */
@@ -61,7 +60,7 @@ body {
 
 @media only screen and (max-width: 1150px){
 	#navlinks a{
-		font-size: 4vw;
+		font-size: 5vw;
 	}
 	.inova h1{
 		font-size: 5em;
