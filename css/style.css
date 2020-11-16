@@ -238,6 +238,7 @@ th{
 	}
 	.about-event1, .about-event2{
 		width: 90vw;
+		font-size: 3vw;
 	}
 	.event-schedule{
 		flex-direction: column;
@@ -249,10 +250,10 @@ th{
 	}
 
 	.event-schedule td{
-		font-size: 4em;
+		font-size: 5vw;
 	}
 	th{
-		font-size: 5em;
+		font-size: 6vw;
 	}
 
 	.join-event{
@@ -287,7 +288,7 @@ select{
 	padding: 5px;
 }
 option{
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 input[type="submit"]{
@@ -303,6 +304,20 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
 	background-color: rgba(92, 91, 91, 0.548);
+}
+
+@media only screen and (max-width: 1000px) {
+	select {
+		font-size: 5vw;
+	}
+
+	option {
+		font-size: 1.5vw;
+	}
+
+	input[type="submit"] {
+		font-size: 5vw;
+	}
 }
 
 /*----------------------------------------------Staff info--------------------------------------------------*/
@@ -333,16 +348,14 @@ input[type="submit"]:hover{
 		flex-direction: column;
 	}
 
+	.member-info {
+		font-size: 4vw;
+	}
+
 	.member-info img {
 		width: 40vw;
 		max-width: 300px;
-	}
-	.member-info h2{
-		font-size: 5.0em;
-	}
-	.member-info p{
-		font-size: 4em;
-	}
+	}	
 }
 
 /*----------------------------------------------Contact info--------------------------------------------------*/
