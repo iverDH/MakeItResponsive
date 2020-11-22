@@ -58,6 +58,8 @@ body {
 	height: auto;
 }
 
+
+
 @media only screen and (max-width: 1150px){
 	#navlinks a{
 		font-size: 5vw;
@@ -67,6 +69,18 @@ body {
 	}
 	#navbar {
 		min-height: 110px; /* ellers går teksten ut av navbaren */
+	}
+}
+
+@media only screen and (max-height: 1000px){
+	#navlinks a {
+		font-size: 5vh;
+	}
+	.inova h1{
+		font-size: 3em;
+	}
+	#navbar {
+		min-height: 50px; /* ellers går teksten ut av navbaren */
 	}
 }
 
